@@ -102,5 +102,6 @@ cmd_vel_publisher가 토픽 cmd_vel을 epuck_driver로 송신하며,
 
 &nbsp;&nbsp;
 프로젝트 실행 결과, 기존 예제 e-puck 프로젝트를 실행할 시에는 [그림 6]과 같이 월드의 중간에 위치해 있음을 확인하였다.
+
 &nbsp;&nbsp;&nbsp;&nbsp;
 publisher를 실행하였을 시 지정한 값에 따라 e-puck 로봇이 맵 위를 움직였다. subscriber 실행 시 [그림 6]과 [그림 7]의 초록색 실선으로 나타나는, 로봇의 적외선 센서가 물체를 인식함을 확인할 수 있었으며, 그 인식값은 [그림 8]과 같다.
