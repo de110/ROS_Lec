@@ -34,7 +34,7 @@ NB_INFRARED_SENSORS = 8
 SENSOR_DIST_FROM_CENTER = 0.035
 
 
-DISTANCE_SENSOR_ANGLE = [
+DISTANCE_SENSOR_ANGLE = [ #radian
     -15 * pi / 180,   # ps0
     -45 * pi / 180,   # ps1
     -90 * pi / 180,   # ps2
@@ -61,7 +61,7 @@ DEVICE_CONFIG = {
 }
 
 
-class EPuckDriver(WebotsDifferentialDriveNode):
+class EPuckDriver(WebotsDifferentialDriveNode): # Epuck properties
     def __init__(self, args):
         super().__init__(
             'epuck_driver',
@@ -73,10 +73,10 @@ class EPuckDriver(WebotsDifferentialDriveNode):
 
         # Intialize distance sensors for LaserScan topic
         self.distance_sensors = {}
-        for i in range(NB_INFRARED_SENSORS):
-            sensor = self.robot.getDistanceSensor('ps{}'.format(i))
-            sensor.enable(self.timestep)
-            self.distance_sensors['ps{}'.format(i)] = sensor
+        for i in range(NB_INFRARED_SENSORS): 
+            sensor = self.robot.getDistanceSensor('ps{}'.format(i)) 
+            sensor.enable(self.timestep) 
+            self.distance_sensors['ps{}'.format(i)] = sensor 
 
         self.laser_publisher = self.create_publisher(LaserScan, '/scan', 1)
         self.tof_sensor = self.robot.getDistanceSensor('tof')
