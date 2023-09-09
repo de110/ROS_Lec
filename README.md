@@ -14,7 +14,7 @@
 [그림 1]  사용된 노드  
 
 &nbsp;&nbsp;
-속도 값을 전달받기 위한 /cmd_vel_publisher, epuck을 제어하기 위한 /epuck_driver, 적외선 센서 값을 전달받는 /subscriber_tof,<br/>&nbsp;&nbsp; 로봇의 현재 상태를 나타내는 /robot_state_publisher 까지, 총 네 개의 노드가 사용되었다.
+속도 값을 전달받기 위한 /cmd_vel_publisher, epuck을 제어하기 위한 /epuck_driver,<br/>&nbsp;&nbsp; 적외선 센서 값을 전달받는 /subscriber_tof, 로봇의 현재 상태를 나타내는 /robot_state_publisher 까지,<br/>&nbsp;&nbsp; 총 네 개의 노드가 사용되었다.
 
 ### 2. Topic/service
 
