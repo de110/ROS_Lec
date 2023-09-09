@@ -14,12 +14,12 @@
 [그림 1]  사용된 노드  
 
 &nbsp;&nbsp;
-속도 값을 전달받기 위한 /cmd_vel_publisher, epuck을 제어하기 위한 /epuck_driver, 적외선 센서 값을 전달받는 /subscriber_tof, 로봇의 현재 상태를 나타내는 /robot_state_publisher 까지, 총 네 개의 노드가 사용되었다.
+속도 값을 전달받기 위한 /cmd_vel_publisher, epuck을 제어하기 위한 /epuck_driver, 적외선 센서 값을 전달받는 /subscriber_tof,<br/>&nbsp;&nbsp; 로봇의 현재 상태를 나타내는 /robot_state_publisher 까지, 총 네 개의 노드가 사용되었다.
 
 ### 2. Topic/service
 
 &nbsp;&nbsp;
-토픽(Topic) 구성은 다음과 같이 네 단계로 확인하였다. 우선 Publisher와 Subscriber를 제외한 초기 토픽을 확인하고, 두 번째와 세 번째는 각각 Publisher와 Subscriber를 포함한 토픽 구성을 확인하였다. 이후 마지막으로 앞선 세 단계를 모두 동시에 포함한 토픽을 확인하였다.
+토픽(Topic) 구성은 다음과 같이 네 단계로 확인하였다. 우선 Publisher와 Subscriber를 제외한 초기 토픽을 확인하고, <br/>&nbsp;&nbsp; 두 번째와 세 번째는 각각 Publisher와 Subscriber를 포함한 토픽 구성을 확인하였다. <br/>&nbsp;&nbsp; 이후 마지막으로 앞선 세 단계를 모두 동시에 포함한 토픽을 확인하였다.
 
 ##### 2.1 e-puck 초기 토픽<br/>
 &nbsp;&nbsp;
@@ -103,5 +103,5 @@ cmd_vel_publisher가 토픽 cmd_vel을 epuck_driver로 송신하며,
 &nbsp;&nbsp;
 프로젝트 실행 결과, 기존 예제 e-puck 프로젝트를 실행할 시에는 [그림 6]과 같이 월드의 중간에 위치해 있음을 확인하였다.
 
-&nbsp;&nbsp;&nbsp;&nbsp;
-publisher를 실행하였을 시 지정한 값에 따라 e-puck 로봇이 맵 위를 움직였다. subscriber 실행 시 [그림 6]과 [그림 7]의 초록색 실선으로 나타나는, 로봇의 적외선 센서가 물체를 인식함을 확인할 수 있었으며, 그 인식값은 [그림 8]과 같다.
+&nbsp;&nbsp;
+publisher를 실행하였을 시 지정한 값에 따라 e-puck 로봇이 맵 위를 움직였다.<br/>&nbsp;&nbsp; subscriber 실행 시 [그림 6]과 [그림 7]의 초록색 실선으로 나타나는, 로봇의 적외선 센서가 물체를 인식함을 확인할 수 있었으며, <br/>&nbsp;&nbsp; 그 인식값은 [그림 8]과 같다.
